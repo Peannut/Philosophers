@@ -6,7 +6,7 @@
 /*   By: zoukaddo <zoukaddo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 21:40:23 by zoukaddo          #+#    #+#             */
-/*   Updated: 2022/06/17 19:12:59 by zoukaddo         ###   ########.fr       */
+/*   Updated: 2022/06/17 19:45:24 by zoukaddo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,10 @@ t_philo	*init_philo(t_info *info)
 
 void	*routine(void *av)
 {
-	printf("%d\n", *(int *)av);
+
 	while (1)
 	{
-		eatp(av);
+		eat_philo((t_philo *)av);
 	}
 	return (NULL);
 }

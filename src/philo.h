@@ -6,7 +6,7 @@
 /*   By: zoukaddo <zoukaddo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/04 18:58:58 by zoukaddo          #+#    #+#             */
-/*   Updated: 2022/06/17 19:10:54 by zoukaddo         ###   ########.fr       */
+/*   Updated: 2022/06/17 19:45:21 by zoukaddo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,6 @@ typedef struct s_philo
 int		ft_atoi(char *str);
 int		storeargs(int ac, char **av, t_info *info);
 int		initializiginfo(t_info *info);
-void	eatp(t_philo *philo);
+void	eat_philo(t_philo *philo);
 
 #endif 

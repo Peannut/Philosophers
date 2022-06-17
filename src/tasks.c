@@ -6,14 +6,15 @@
 /*   By: zoukaddo <zoukaddo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 18:17:25 by zoukaddo          #+#    #+#             */
-/*   Updated: 2022/06/17 19:10:50 by zoukaddo         ###   ########.fr       */
+/*   Updated: 2022/06/17 19:51:01 by zoukaddo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-void	eatp(t_philo *philo)
+void	eat_philo(t_philo *philo)
 {
+
 	while (1)
 	{
 		if (philo->info->fork_status[philo->r_fork] == FREE)
