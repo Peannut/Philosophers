@@ -6,7 +6,7 @@
 /*   By: zoukaddo <zoukaddo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/04 18:58:58 by zoukaddo          #+#    #+#             */
-/*   Updated: 2022/06/17 19:45:21 by zoukaddo         ###   ########.fr       */
+/*   Updated: 2022/06/23 03:02:40 by zoukaddo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,13 @@ typedef struct s_philo
 	size_t	last_eat;
 }	t_philo;
 
+void	ft_usleep(useconds_t time);
+size_t	getime_usec(void);
 int		ft_atoi(char *str);
 int		storeargs(int ac, char **av, t_info *info);
 int		initializiginfo(t_info *info);
 void	eat_philo(t_philo *philo);
+void	philo_sleep(t_philo *philo);
+void	philo_think(t_philo *philo);
 
 #endif 
